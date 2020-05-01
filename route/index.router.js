@@ -8,4 +8,10 @@ router.get('/subject/create',useController.create);
 
 router.post('/subject/create',useController.postCreate);
 
+router.get('/subject/:id',useController.getId);
+
+router.get('/note/:id',useController.getNote);
+
+router.post('/note/:id',useController.postNote);
+
 module.exports = router;

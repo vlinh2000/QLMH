@@ -4,31 +4,97 @@
       "name": "Cơ Sở Văn Hóa",
       "code": "XH001 - 07",
       "tcName": "Phạm Tuấn Anh",
-      "id": "exuSf6HDa"
+      "id": "xGfLbcPj8",
+      "news": []
     },
     {
       "name": "Kiến Trúc Máy Tính",
       "code": "CT173 - 06",
       "tcName": "Đỗ Thanh Nghị",
-      "id": "A6O3KDYHd"
+      "id": "KvSt3vRCO",
+      "news": []
     },
     {
       "name": "Lập Trình Hướng Đối Tượng",
       "code": "CT176 - 09",
       "tcName": "Triệu Thanh Ngoan",
-      "id": "dPFWV5PQh"
+      "id": "oQJA4qVIG",
+      "news": [
+        {
+          "title": "THONG BAO",
+          "content": [
+            "Lịch kiểm tra thực hành",
+            "",
+            "Dự kiến: 28/06/2020",
+            "",
+            "Lịch thi cuối kỳ lý thuyết",
+            "",
+            "Dự kiến: tuần 06-10/07/2020"
+          ],
+          "link": "https://elcit.ctu.edu.vn/course/view.php?id=3949",
+          "daytime": "20:58:34 1-5-2020",
+          "id": "n5ZZ_O3fj"
+        },
+        {
+          "title": "Thông báo Đăng ký lịch thực hành bù",
+          "content": [
+            " a. Lịch thực hành cụ thể của lớp mình như sau: Tuần ... - ... - ... - ... - ...",
+            "",
+            "b. Tất cả các bạn đăng ký thực hành vào một trong bốn lựa chọn (sáng chiều 7 và sáng chiều chủ nhật) cho buổi thực hành 2 nhé.",
+            "",
+            "https://docs.google.com/spreadsheets/d/1TqLh3J56MWGjBVbrYIOK14X67_y474mJxO2DfclmfLk/edit?usp=sharing",
+            "",
+            "Hạn cuối là 20/03/2020"
+          ],
+          "link": "https://elcit.ctu.edu.vn/course/view.php?id=3949",
+          "daytime": "21:3:52 1-5-2020",
+          "id": "fSAE6If8W"
+        }
+      ]
     },
     {
       "name": "Phân Tích & Thiết Kế Thuật Toán",
       "code": "CT174 - 02",
       "tcName": "Võ Huỳnh Trâm",
-      "id": "hy651lusK"
+      "id": "IBskTQcqQ",
+      "news": []
     },
     {
       "name": "Cơ Sở Dữ Liệu",
       "code": "CT180 - 04",
-      "tcName": "Phạm Xuân Lộc",
-      "id": "DeN-p3Tip"
+      "tcName": "Phạm Thị Xuân Lộc",
+      "id": "uIrYoakHg",
+      "news": [
+        {
+          "title": "Chương 2 MÔ HÌNH QUAN HỆ",
+          "content": [
+            " Slide bài giảng "
+          ],
+          "link": "https://drive.google.com/drive/u/0/folders/1tFVxYYbPkxoKXY9jm3IXu-0eqP5G3Oye",
+          "daytime": "21:8:32 1-5-2020",
+          "id": "In3WKBmZj"
+        },
+        {
+          "title": "Chương 3 ĐẠI SỐ QUAN HỆ",
+          "content": [
+            " Slide bên dưới"
+          ],
+          "link": "https://drive.google.com/drive/u/0/folders/14fe-3hwzg-_0IMrlW7OUIoL53OmmT6tP",
+          "daytime": "21:9:43 1-5-2020",
+          "id": "fYCBwXkrI"
+        },
+        {
+          "title": "Tìm max gì gì đó",
+          "content": [
+            "1. group ",
+            "2. Tạo 1 bảng để lưu tổng số sau khi count  ( sum ) đặng lưu vào",
+            "3 .  lấy max của nó"
+          ],
+          "link": "",
+          "daytime": "21:24:11 1-5-2020",
+          "id": "5oxZRTzDJ"
+        }
+      ]
     }
   ]
 }

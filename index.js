@@ -13,8 +13,6 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 app.set('view engine', 'pug');
 
-
-
 app.use('/auth',loginRouter);
 
 app.use('/',authMiddleware,useRouter);

@@ -1,0 +1,20 @@
+extends ./common
+
+block content
+
+ h5=subject.name 
+
+ a.btn.btn-primary(href="/note/"+subject.id class="mb-2 mt-2") Note
+
+ table
+  each news in subject.news
+   tr.border-bottom
+    td.pb-1.pt-5
+     h6.mb-3= news.title
+     each content in news.content
+      p=content
+     a(href=news.link , target="_blank")= news.link
+     h6.small.text-danger.font-weight-light.mt-5= "Đăng lúc: " + news.daytime
+
+
+ 

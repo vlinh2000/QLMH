@@ -5,6 +5,7 @@ if(!req.signedCookies.userID){
 	return;
 }
 
+ res.locals.name="LINH";
 next();
 }
 

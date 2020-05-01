@@ -25,6 +25,5 @@ module.exports.postLogin=function(req,res){
    res.cookie("userID",'12345',{
    	signed:true
    });
-   res.locals.name= "LINH"
    res.redirect("/");
 }

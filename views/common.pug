@@ -1,9 +1,11 @@
 html
  head
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
  body
   nav.navbar.navbar-expand-lg.navbar-light.bg-light
-      a.navbar-brand(href='#').text-danger V.Linh
+      a.navbar-brand(href='#').text-danger QLMH
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
       #navbarNav.collapse.navbar-collapse
@@ -11,9 +13,16 @@ html
           li.nav-item
             a.nav-link.active(href='/') Home 
           li.nav-item
-            a.nav-link(href='/subject') Subject
+            a.nav-link.active(href='#') 1
+          li.nav-item
+            a.nav-link.active(href='#') 2
+          li.nav-item
+            a.nav-link.active(href='#') 3
 
-  block content
+      if name
+       p="Hi"+ name
+  .container.mt-5
+   block content
 
 
  

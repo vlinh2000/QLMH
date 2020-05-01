@@ -2,8 +2,6 @@ var express =require('express');
 var app= express();
 var cookieParser = require('cookie-parser')
 
-
-
 var useRouter=require('./route/index.router');
 var loginRouter=require('./route/login.router');
 

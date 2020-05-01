@@ -9,14 +9,14 @@ module.exports.postLogin=function(req,res){
 	
 	if(email!=="vietlinhst2013@gmail.com"){
 		res.render('login',{
-			errs:["Email khong ton tai !"],
+			errs:["Email không tồn tại !"],
 			values:req.body
 		});
 		return;
 	}
 	if(password!=="123123"){
 		res.render('login',{
-			errs:["Sai mat khau !"],
+			errs:["Sai mật khẩu !"],
 			values:req.body
 		});
 		return;
@@ -25,5 +25,6 @@ module.exports.postLogin=function(req,res){
    res.cookie("userID",'12345',{
    	signed:true
    });
-   res.redirect("/subject");
+   res.locals.name= "LINH"
+   res.redirect("/");
 }

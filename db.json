@@ -1,0 +1,34 @@
+{
+  "subject": [
+    {
+      "name": "Cơ Sở Văn Hóa",
+      "code": "XH001 - 07",
+      "tcName": "Phạm Tuấn Anh",
+      "id": "exuSf6HDa"
+    },
+    {
+      "name": "Kiến Trúc Máy Tính",
+      "code": "CT173 - 06",
+      "tcName": "Đỗ Thanh Nghị",
+      "id": "A6O3KDYHd"
+    },
+    {
+      "name": "Lập Trình Hướng Đối Tượng",
+      "code": "CT176 - 09",
+      "tcName": "Triệu Thanh Ngoan",
+      "id": "dPFWV5PQh"
+    },
+    {
+      "name": "Phân Tích & Thiết Kế Thuật Toán",
+      "code": "CT174 - 02",
+      "tcName": "Võ Huỳnh Trâm",
+      "id": "hy651lusK"
+    },
+    {
+      "name": "Cơ Sở Dữ Liệu",
+      "code": "CT180 - 04",
+      "tcName": "Phạm Xuân Lộc",
+      "id": "DeN-p3Tip"
+    }
+  ]
+}

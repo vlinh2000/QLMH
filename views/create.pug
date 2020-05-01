@@ -1,0 +1,24 @@
+extends ./common
+
+block content
+ 
+ form(action="/subject/create" method="POST" class="m-5" ) 
+  .form-group
+   label(for='name') Tên môn học :
+   input#name(class="form-control w-50" name = "name" type="text") 
+
+
+  .form-group
+   label(for='code') Mã môn :
+   input#code(class="form-control w-50" name="code" type="text") 
+
+   .form-group
+   label(for='code') Tên Giáo Viên :
+   input#teacher-name(class="form-control w-50" name="tcName" type="text") 
+
+  button.btn.btn-primary Accept
+
+
+   
+
+

@@ -2,4 +2,27 @@ extends ./common
 
 block content 
  
- h1 hello
+ a(class="btn btn-primary mb-5" href="/subject/create" ) New Subject
+
+ table.table
+  th Tên Môn
+  th Mã Môn
+  th Tên Giáo Viên
+  th Trạng Thái
+  th Chi Tiết
+ 
+  each sub in subjects 
+   tr 
+    td=sub.name
+    td=sub.code
+    td=sub.tcName
+    if sub.status
+     td
+      i(class="zmdi zmdi-alert-triangle text-danger")     
+    else
+     td
+      i(class="zmdi zmdi-check zmdi-hc-2x  text-success")
+    td
+     a(href="#") view
+
+

@@ -1,0 +1,21 @@
+extends ./common
+
+block content
+ 
+ h1.text-danger.text-center.mt-5 Login
+ if errs
+  each err in errs
+   .form-group
+    .alert.alert-danger(class="w-50 m-auto")=err
+
+ form(class="w-50 m-auto" action='/auth/login' method="POST")
+
+  .form-group
+   label(for='email') Email
+   input#email(name="email", type="email" , class="form-control" , value=values ? values.email : "" )
+  
+  .form-group
+   label(for="password") Password
+   input#password(name='password', type="password" , class="form-control", value=values?values.password: "")
+
+  button.btn.btn-primary Login

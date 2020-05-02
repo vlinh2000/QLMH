@@ -1,0 +1,69 @@
+extends ./common
+
+block content
+ 
+ if notif
+  if notif.name.length > 1
+   marquee="Hôm nay học môn " + notif.name[0] + " tiết " + notif.time[0] + " ở phòng " + notif.classroom[0] + " và môn " + notif.name[1] + " tiết " + notif.time[1] + " ở phòng " + notif.classroom[1]	
+  else
+   marquee="Hôm nay học môn " + notif.name + " tiết " + notif.time + " ở phòng " + notif.classroom
+
+ else 
+  marquee="Hôm nay không có học nhe sếp !"
+
+
+ h6.mb-4.mt-4 THỜI KHÓA BIỂU
+
+
+ table.table
+  th Thứ
+  th Tên môn học
+  th Tiết
+  th Phòng 
+  th Tuần học
+  each day in TKB
+   if today === day.id 
+    tr
+     td.text-danger=day.id
+     td
+      each sub in day.name
+       span.text-danger=sub
+       br
+     td
+      each time in day.time
+       span.text-danger=time
+       br
+     td
+      each room in day.classroom
+       span.text-danger=room
+       br
+     td
+      each week in day.week
+       span.text-danger=week
+       br
+   else
+    tr
+     td=day.id
+     td
+      each sub in day.name
+       span=sub
+       br
+     td
+      each time in day.time
+       span=time
+       br
+     td
+      each room in day.classroom
+       span=room
+       br
+     td
+      each week in day.week
+       span=week
+       br
+
+
+  	
+  	
+
+
+  

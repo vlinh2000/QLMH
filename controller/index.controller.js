@@ -2,9 +2,15 @@ var db= require('../db');
 var shortid= require("shortid");
 var subject = db.get("subject").value(); 
 
+
+var today = new Date();
+var day = (today.getDay()+1).toString();
+var notif = db.get("TKB").find({id: day}).value();
 module.exports.get= function(req,res){
+
 	res.render('index',{
-		subjects : subject
+		subjects : subject,
+		notif: notif
 	});
 }
 

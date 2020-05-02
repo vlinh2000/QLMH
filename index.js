@@ -4,6 +4,7 @@ var cookieParser = require('cookie-parser')
 
 var useRouter=require('./route/index.router');
 var loginRouter=require('./route/login.router');
+var tkbRouter = require('./route/tkb.route');
 
 var authMiddleware = require("./middleware/auth.middleware");
 
@@ -16,6 +17,8 @@ app.set('view engine', 'pug');
 app.use('/auth',loginRouter);
 
 app.use('/',authMiddleware,useRouter);
+
+app.use('/',tkbRouter);
 
 
 

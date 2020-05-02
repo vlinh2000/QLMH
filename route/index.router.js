@@ -14,4 +14,6 @@ router.get('/note/:id',useController.getNote);
 
 router.post('/note/:id',useController.postNote);
 
+router.get('/delete',useController.deleteId);
+
 module.exports = router;

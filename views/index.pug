@@ -1,8 +1,9 @@
 extends ./common
 
 block content 
- 
- a(class="btn btn-primary mb-5" href="/subject/create" ) New Subject
+ marquee="Bạn vừa thêm môn " + subjects[subjects.length - 1].name
+
+ a(class="btn btn-primary mb-5 mt-2" href="/subject/create" ) New Subject
 
  table.table
   th Tên Môn

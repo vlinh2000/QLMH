@@ -45,3 +45,13 @@ module.exports.postNote= function(req,res){
 	db.get('subject').find({id:id}).get('news').push(req.body).write();
 	res.redirect('/subject/'+id);
 }
+
+module.exports.deleteId= function(req,res){
+	var idSub= req.query.idSub;
+	var idNews= req.query.idNews;
+
+	var newDel = db.get('subject').find({id:idSub}).get('news').find({id:idNews}).value();
+
+	db.get('subject').find({id:idSub}).get('news').remove(newDel).write();
+	res.redirect("/subject/"+idSub);
+}

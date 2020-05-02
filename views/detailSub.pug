@@ -10,7 +10,10 @@ block content
   each news in subject.news
    tr.border-bottom
     td.pb-1.pt-5
-     h6.mb-3= news.title
+     .d-flex
+      h6.mb-3.flex-grow-1= news.title 
+      a(href="/delete?idNews="+news.id+"&idSub="+subject.id)
+       i.zmdi.zmdi-close.text-danger
      each content in news.content
       p=content
      a(href=news.link , target="_blank")= news.link

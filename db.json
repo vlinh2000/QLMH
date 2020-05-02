@@ -5,14 +5,68 @@
       "code": "XH001 - 07",
       "tcName": "Phạm Tuấn Anh",
       "id": "xGfLbcPj8",
-      "news": []
+      "news": [
+        {
+          "title": "BT Giữa Kỳ",
+          "content": [
+            " đề + bài làm"
+          ],
+          "link": "https://drive.google.com/drive/u/0/folders/157jnJI815SplaRm-RQFL9WJ5LMp3evMc",
+          "daytime": "9:38:6 2-5-2020",
+          "id": "9lebl48lR"
+        },
+        {
+          "title": "Phiếu BT",
+          "content": [
+            " đã xong!"
+          ],
+          "link": "https://drive.google.com/drive/u/0/folders/1MU9njidxDaIEVJw-SEssC2nOlgMj1vlm",
+          "daytime": "9:38:50 2-5-2020",
+          "id": "4fALhTR84"
+        }
+      ]
     },
     {
       "name": "Kiến Trúc Máy Tính",
       "code": "CT173 - 06",
       "tcName": "Đỗ Thanh Nghị",
       "id": "KvSt3vRCO",
-      "news": []
+      "news": [
+        {
+          "title": "Kiến trúc máy tính",
+          "content": [
+            "Nội dung:",
+            "1. Giới thiệu",
+            "2. Hiệu suất máy tính",
+            "3. Kiến trúc bộ lệnh",
+            "4. Phép tính số học",
+            "5. Bộ xử lý",
+            "6. Kỹ thuật ống dẫn",
+            "7. Lập trình Assembly"
+          ],
+          "link": "http://www.cit.ctu.edu.vn/~dtnghi/cod/index.html",
+          "daytime": "11:29:56 2-5-2020",
+          "id": "0rmxAifC2"
+        },
+        {
+          "title": "VD cộng trừ nhân chia",
+          "content": [
+            "Link bên dưới !"
+          ],
+          "link": "https://drive.google.com/drive/u/0/folders/17-jAfqEQOanG8-6j2cxdZvYkIlh5yYu1",
+          "daytime": "11:31:15 2-5-2020",
+          "id": "xr6vmnUh7"
+        },
+        {
+          "title": "BT 1",
+          "content": [
+            "Đã làm !"
+          ],
+          "link": "https://mail.google.com/mail/u/1/#search/dtnghi%40ctu.edu.vn/KtbxLvhKRXJWLzZktBGPzhJzdZMTzPBRPL?projector=1&messagePartId=0.1",
+          "daytime": "11:48:21 2-5-2020",
+          "id": "0c_GTxm-H"
+        }
+      ]
     },
     {
       "name": "Lập Trình Hướng Đối Tượng",
@@ -21,34 +75,24 @@
       "id": "oQJA4qVIG",
       "news": [
         {
-          "title": "THONG BAO",
+          "title": "Các bài tập đã làm",
           "content": [
-            "Lịch kiểm tra thực hành",
-            "",
-            "Dự kiến: 28/06/2020",
-            "",
-            "Lịch thi cuối kỳ lý thuyết",
-            "",
-            "Dự kiến: tuần 06-10/07/2020"
+            " "
           ],
-          "link": "https://elcit.ctu.edu.vn/course/view.php?id=3949",
-          "daytime": "20:58:34 1-5-2020",
-          "id": "n5ZZ_O3fj"
+          "link": "https://drive.google.com/drive/u/0/folders/1keGKvwsenJE6z9ap5Xju663kgsUPQeA9",
+          "daytime": "11:49:29 2-5-2020",
+          "id": "yuTEX3kNI"
         },
         {
-          "title": "Thông báo Đăng ký lịch thực hành bù",
+          "title": "Video bài giảng",
           "content": [
-            " a. Lịch thực hành cụ thể của lớp mình như sau: Tuần ... - ... - ... - ... - ...",
-            "",
-            "b. Tất cả các bạn đăng ký thực hành vào một trong bốn lựa chọn (sáng chiều 7 và sáng chiều chủ nhật) cho buổi thực hành 2 nhé.",
-            "",
-            "https://docs.google.com/spreadsheets/d/1TqLh3J56MWGjBVbrYIOK14X67_y474mJxO2DfclmfLk/edit?usp=sharing",
-            "",
-            "Hạn cuối là 20/03/2020"
+            "Nội dung video :",
+            "+  Chỉ làm Buổi 4 bài 4 : tính đa hình",
+            "+ Cách đọc ghi file java "
           ],
-          "link": "https://elcit.ctu.edu.vn/course/view.php?id=3949",
-          "daytime": "21:3:52 1-5-2020",
-          "id": "fSAE6If8W"
+          "link": "https://drive.google.com/file/d/19TG4qYIAI3sYy2Vt3tkIXpuphfzHpG5b/view?usp=sharing",
+          "daytime": "11:56:52 2-5-2020",
+          "id": "Ymmly5qyJ"
         }
       ]
     },
@@ -57,7 +101,23 @@
       "code": "CT174 - 02",
       "tcName": "Võ Huỳnh Trâm",
       "id": "IBskTQcqQ",
-      "news": []
+      "news": [
+        {
+          "title": "Chương 2 SẮP XẾP",
+          "content": [
+            "+ Chọn ( select )",
+            "+ Xen ( Insert )",
+            "+ Nổi bọt ( bubbles)",
+            "+ Quick Sort",
+            "+ Heap Sort",
+            "+ T.T Tham Ăn",
+            "+ T.T Chia để trị"
+          ],
+          "link": "https://drive.google.com/drive/u/0/folders/1HYR9Kc8bpTUniEGME7jcVj5kZNzOZgrC",
+          "daytime": "12:16:58 2-5-2020",
+          "id": "bLcXRDmAP"
+        }
+      ]
     },
     {
       "name": "Cơ Sở Dữ Liệu",
@@ -93,6 +153,23 @@
           "link": "",
           "daytime": "21:24:11 1-5-2020",
           "id": "5oxZRTzDJ"
+        }
+      ]
+    },
+    {
+      "name": "Đường Lối ĐCS VN",
+      "code": "ML011 - 08",
+      "tcName": "Phan Thị Phương Anh",
+      "id": "aOi8Qscjw",
+      "news": [
+        {
+          "title": "Chương 5",
+          "content": [
+            " "
+          ],
+          "link": "https://drive.google.com/drive/u/0/folders/15zDRnB9JPE_1bLgCVkFWfxvCnh8QTDAd",
+          "daytime": "12:18:22 2-5-2020",
+          "id": "wcc3_WdOF"
         }
       ]
     }

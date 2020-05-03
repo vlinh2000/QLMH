@@ -61,3 +61,33 @@ module.exports.deleteId= function(req,res){
 	db.get('subject').find({id:idSub}).get('news').remove(newDel).write();
 	res.redirect("/subject/"+idSub);
 }
+
+module.exports.change= function(req,res){
+   
+   var idSub= req.query.idSub;
+   var idNews= req.query.idNews;
+   var nChange = db.get('subject').find({id:idSub}).get('news').find({id:idNews}).value();
+	res.render("change",{
+		idSub,
+		idNews,
+		nChange
+	});
+}
+
+module.exports.postChange= function(req,res){
+   
+   var idSub= req.query.idSub;
+   var idNews= req.query.idNews;
+   var nChange = db.get('subject').find({id:idSub}).get('news').find({id:idNews}).value();
+   req.body.id = idNews;
+   req.body.daytime= nChange.daytime;
+   req.body.content =  req.body.content.split('\r\n'||'\r\n\r\n')
+   console.log(db.get('subject').find({id:idSub}).get('news').find({id:idNews})
+   	.assign({title:req.body.title})
+   	.assign({content:req.body.content})
+   	.assign({daytime:req.body.daytime})
+   	.assign({id:req.body.id})
+   	.write());
+   // console.log(req.body);
+   res.redirect("/subject/"+idSub);
+}

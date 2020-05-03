@@ -11,6 +11,8 @@ block content
     td.pb-1.pt-5
      .d-flex
       h6.mb-3.flex-grow-1= news.title 
+      a.mr-4(href="/change?idNews="+news.id+"&idSub="+subject.id)
+       i.zmdi.zmdi-brush
       a(href="/delete?idNews="+news.id+"&idSub="+subject.id)
        i.zmdi.zmdi-close.text-danger
      each content in news.content

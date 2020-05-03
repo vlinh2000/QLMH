@@ -9,7 +9,8 @@
         {
           "title": "BT Giữa Kỳ",
           "content": [
-            " đề + bài làm"
+            "Đề bên link dưới",
+            "Đã làm xong !"
           ],
           "link": "https://drive.google.com/drive/u/0/folders/157jnJI815SplaRm-RQFL9WJ5LMp3evMc",
           "daytime": "9:38:6 2-5-2020",
@@ -258,5 +259,16 @@
         "123**678901234567*****"
       ]
     }
-  ]
+  ],
+  "undefined": {
+    "title": "BT Giữa Kỳ nhe",
+    "content": " ",
+    "link": "https://drive.google.com/drive/u/0/folders/157jnJI815SplaRm-RQFL9WJ5LMp3evMc"
+  },
+  "object Object": {
+    "title": "BT Giữa Kỳ",
+    "content": "",
+    "link": "https://drive.google.com/drive/u/0/folders/157jnJI815SplaRm-RQFL9WJ5LMp3evMc",
+    "id": "9lebl48lR"
+  }
 }

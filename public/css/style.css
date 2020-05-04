@@ -1,0 +1,26 @@
+.notification{
+  position: relative;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.total{
+position: absolute;
+left: 8px;
+top:-10%;
+border: 1px solid darkred;
+background-color: darkred;
+width: 20px;
+height: 15px;
+text-align: center;
+font-size: 60%;
+
+color: #EEE;
+border-radius: 5px;
+}
+
+
+.icNof{
+	cursor: pointer;
+}

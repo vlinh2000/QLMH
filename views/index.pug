@@ -35,12 +35,14 @@ block content
     td=sub.name
     td=sub.code
     td=sub.tcName
-    if sub.status
+    if sub.total === 0
      td
-      i(class="zmdi zmdi-alert-triangle text-danger")     
+      i.zmdi.zmdi-notifications-none.zmdi-hc-lg.text-primary     
     else
      td
-      i(class="zmdi zmdi-check zmdi-hc-2x  text-success")
+      .notification
+       i.zmdi.zmdi-notifications.zmdi-hc-lg.icNof.text-primary
+       p.total=sub.total  
     td
      a(href="/subject/"+ sub.id) view
 

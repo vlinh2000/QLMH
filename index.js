@@ -23,6 +23,8 @@ app.use('/',tkbRouter);
 
 app.use('/project',pjRouter);
 
+app.use(express.static('public'));
+
 
 app.listen(3000,()=>console.log("sever loading on port 3000"));
 

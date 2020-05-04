@@ -25,7 +25,8 @@
           "daytime": "9:38:50 2-5-2020",
           "id": "4fALhTR84"
         }
-      ]
+      ],
+      "total": 2
     },
     {
       "name": "Kiến Trúc Máy Tính",
@@ -67,7 +68,8 @@
           "daytime": "11:48:21 2-5-2020",
           "id": "0c_GTxm-H"
         }
-      ]
+      ],
+      "total": 3
     },
     {
       "name": "Lập Trình Hướng Đối Tượng",
@@ -95,7 +97,8 @@
           "daytime": "11:56:52 2-5-2020",
           "id": "Ymmly5qyJ"
         }
-      ]
+      ],
+      "total": 2
     },
     {
       "name": "Phân Tích & Thiết Kế Thuật Toán",
@@ -118,7 +121,8 @@
           "daytime": "12:16:58 2-5-2020",
           "id": "bLcXRDmAP"
         }
-      ]
+      ],
+      "total": 1
     },
     {
       "name": "Cơ Sở Dữ Liệu",
@@ -155,7 +159,8 @@
           "daytime": "21:24:11 1-5-2020",
           "id": "5oxZRTzDJ"
         }
-      ]
+      ],
+      "total": 3
     },
     {
       "name": "Đường Lối ĐCS VN",
@@ -172,7 +177,8 @@
           "daytime": "12:18:22 2-5-2020",
           "id": "wcc3_WdOF"
         }
-      ]
+      ],
+      "total": 1
     }
   ],
   "TKB": [

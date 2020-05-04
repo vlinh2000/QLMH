@@ -49,6 +49,9 @@ module.exports.postNote= function(req,res){
 	req.body.id = shortid.generate();
 	req.body.content =  req.body.content.split('\r\n'||'\r\n\r\n')
 	db.get('subject').find({id:id}).get('news').push(req.body).write();
+	var total=db.get('subject').find({id:id}).get('news').value().length;
+	db.get('subject').find({id:id}).set("total",total).write();
+	
 	res.redirect('/subject/'+id);
 }
 
@@ -57,8 +60,9 @@ module.exports.deleteId= function(req,res){
 	var idNews= req.query.idNews;
 
 	var newDel = db.get('subject').find({id:idSub}).get('news').find({id:idNews}).value();
-
-	db.get('subject').find({id:idSub}).get('news').remove(newDel).write();
+    db.get('subject').find({id:idSub}).get('news').remove(newDel).write();
+    var total=db.get('subject').find({id:idSub}).get('news').value().length;
+	db.get('subject').find({id:idSub}).set("total",total).write();
 	res.redirect("/subject/"+idSub);
 }
 

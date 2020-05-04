@@ -82,12 +82,12 @@ module.exports.postChange= function(req,res){
    req.body.id = idNews;
    req.body.daytime= nChange.daytime;
    req.body.content =  req.body.content.split('\r\n'||'\r\n\r\n')
-   console.log(db.get('subject').find({id:idSub}).get('news').find({id:idNews})
+  db.get('subject').find({id:idSub}).get('news').find({id:idNews})
    	.assign({title:req.body.title})
    	.assign({content:req.body.content})
    	.assign({daytime:req.body.daytime})
    	.assign({id:req.body.id})
-   	.write());
+   	.write();
    // console.log(req.body);
    res.redirect("/subject/"+idSub);
 }

@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser')
 var useRouter=require('./route/index.router');
 var loginRouter=require('./route/login.router');
 var tkbRouter = require('./route/tkb.route');
+var pjRouter =require('./route/project.route');
 
 var authMiddleware = require("./middleware/auth.middleware");
 
@@ -20,7 +21,7 @@ app.use('/',authMiddleware,useRouter);
 
 app.use('/',tkbRouter);
 
-
+app.use('/project',pjRouter);
 
 
 app.listen(3000,()=>console.log("sever loading on port 3000"));

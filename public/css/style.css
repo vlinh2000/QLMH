@@ -24,3 +24,22 @@ border-radius: 5px;
 .icNof{
 	cursor: pointer;
 }
+
+
+.imusic{
+cursor: pointer;
+position: relative;
+}
+
+.music{
+position: absolute;
+top: 35%;
+left:0;
+opacity: 0;
+}
+
+.imusic:hover .music {
+	opacity: 1;
+}
+
+

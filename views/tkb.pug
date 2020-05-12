@@ -4,18 +4,18 @@ block content
  
  if notif
   if notif.name.length > 1
-   marquee
+   marquee(scrollamount="10")
     .d-flex
      img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
      p.ml-2="Hôm nay học môn " + notif.name[0] + " tiết " + notif.time[0] + " ở phòng " + notif.classroom[0] + " và môn " + notif.name[1] + " tiết " + notif.time[1] + " ở phòng " + notif.classroom[1] + " nhe sếp !"
   else
-   marquee
+   marquee(scrollamount="10")
     .d-flex
      img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
      p.ml-2="Hôm nay học môn " + notif.name + " tiết " + notif.time + " ở phòng " + notif.classroom + " nhe sếp !"
 
  else 
-  marquee 
+  marquee(scrollamount="10") 
    .d-flex
     img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
     p.ml-2="Hôm nay không có học nha sếp !"

@@ -7,7 +7,6 @@ var today = new Date();
 var day = (today.getDay()+1).toString();
 var notif = db.get("TKB").find({id: day}).value();
 module.exports.get= function(req,res){
-
 	res.render('index',{
 		subjects : subject,
 		notif: notif
@@ -21,6 +20,7 @@ module.exports.create= function(req,res){
 module.exports.postCreate= function(req,res){
 	req.body.id = shortid.generate();
 	req.body.news=[];
+	req.body.total=0;
 	db.get("subject").push(req.body).write();
 	res.redirect("/");
 }
@@ -94,4 +94,14 @@ module.exports.postChange= function(req,res){
    	.write();
    // console.log(req.body);
    res.redirect("/subject/"+idSub);
+}
+
+module.exports.search= function(req,res){
+	var q=req.query.q;
+	var subject = db.get('subject').value().filter((x)=>x.name.toUpperCase().indexOf(q.toUpperCase())!==-1||
+		x.code.toUpperCase().indexOf(q.toUpperCase())!==-1||x.tcName.toUpperCase().indexOf(q.toUpperCase())!==-1);
+	res.render('index',{
+		subjects : subject,
+		notif: notif
+	});
 }

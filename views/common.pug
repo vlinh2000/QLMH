@@ -3,26 +3,30 @@ html
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/mediaquery.css">
+
 
  body
   nav.navbar.navbar-expand-lg.navbar-light.bg-light
       a.navbar-brand(href='/').text-danger QLMH
-      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavAltMarkup', aria-controls='navbarNavAltMarkup', aria-expanded='false', aria-label='Toggle navigation')
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
-      #navbarNav.collapse.navbar-collapse
-        ul.navbar-nav
-          li.nav-item
-            a.nav-link.active(href='/') Home 
-          li.nav-item
-            a.nav-link.active(href='/tkb') TKB
-          li.nav-item
-            a.nav-link.active(href='/project') PROJECT
-          li.nav-item
-            a.nav-link.active(href='#') 3
+      div(class='collapse navbar-collapse' id='navbarNav' )
+       ul.navbar-nav
+        li.nav-item
+         a.nav-link.active(href='/') Home 
+        li.nav-item
+         a.nav-link.active(href='/tkb') Timetable
+        li.nav-item
+         a.nav-link.active(href='/project') Project
+        li.nav-item
+         a.nav-link.active(href='#') 3
+
+       
 
       if name
-       p="Hi sếp "+ name
-  .container.mt-5
+       p.text-danger.hi="Hi sếp "+ name
+  .container.mt-5.main
    block content
 
 

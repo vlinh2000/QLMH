@@ -120,9 +120,63 @@
           "link": "https://drive.google.com/drive/u/0/folders/1HYR9Kc8bpTUniEGME7jcVj5kZNzOZgrC",
           "daytime": "12:16:58 2-5-2020",
           "id": "bLcXRDmAP"
+        },
+        {
+          "title": "Hàm nhân",
+          "content": [
+            " Hàm f(n) là hàm nhân nếu f(m.n)=f(m).f(n)",
+            "VD:",
+            "+ f(n) =1",
+            "+ f(n)=n",
+            "+ f(n)=n^k",
+            "+ f(n) = log n => không phải hàm nhân ",
+            ""
+          ],
+          "link": "",
+          "daytime": "20:49 5-5-2020",
+          "id": "iCtmLPHB_"
+        },
+        {
+          "title": "Giải PTĐQ tổng quát bằng phương pháp truy hồi",
+          "content": [
+            "\tT(n) = T(n-1) + C2",
+            "\tT(n) = [T(n-2) + C2] + C2 = T(n-2) + 2C2",
+            "\tT(n) = [T(n-3) + C2] + 2C2 = T(n-3) + 3C2",
+            "            ……",
+            "\tT(n) = T(n-i) + iC2",
+            "Quá trình truy hồi kết thúc khi n - i = 0 hay i = n. ",
+            "Khi đó ta có T(n) = T(0) + nC2 = C1 + nC2 = O(n)",
+            "",
+            ""
+          ],
+          "link": "",
+          "daytime": "22:4 5-5-2020",
+          "id": "qdIqe6p2s"
+        },
+        {
+          "title": "Giải PTĐQ tổng quát bằng phương pháp tổng quát",
+          "content": [
+            "- xác định a =? ,b=? ",
+            "- xem d(n) có là hàm nhân",
+            "- d(b) như thế nào với a ( > < =)",
+            "=> lấy công thức ứng với trường hợp tương ứng ra tính T(n) ",
+            "",
+            "+ Trường hợp 1: a > d(b) ",
+            "T(n) = O(n^logb(a)).            ( n mũ log b của a)",
+            "+ Trường hợp 2: a < d(b)",
+            "T(n) = O(n^logb(d(b))).       ( n mũ log b của d(b))",
+            "+ Trường hợp 3: a = d(b) ",
+            "T(n) = O(n^logb(a)logb(n))   (n mũ log b của a nhân log b của n )",
+            "",
+            "",
+            ""
+          ],
+          "link": "",
+          "daytime": "22:6 5-5-2020",
+          "id": "3F1HsVyP1"
         }
       ],
-      "total": 1
+      "total": 4
     },
     {
       "name": "Cơ Sở Dữ Liệu",
@@ -179,6 +233,80 @@
         }
       ],
       "total": 1
+    },
+    {
+      "name": "EXPRESS JS",
+      "code": "",
+      "tcName": "",
+      "id": "_Ls64J0de",
+      "news": [],
+      "total": 0
+    },
+    {
+      "name": "JavaScript",
+      "code": "",
+      "tcName": "",
+      "id": "3gCvJ-8yM",
+      "news": [],
+      "total": 0
+    },
+    {
+      "name": "HTML",
+      "code": "",
+      "tcName": "",
+      "id": "h_wa7gtX_",
+      "news": [],
+      "total": 0
+    },
+    {
+      "name": "Git",
+      "code": "",
+      "tcName": "",
+      "id": "FsvVomCuQ",
+      "news": [
+        {
+          "title": "Các cú pháp thông dụng ",
+          "content": [
+            "git status",
+            "git add .   ||  git add <tên tệp>",
+            "git commit -m '<tên commit>'",
+            "git log                                         : xem lại các commit",
+            "git show <id commit>               : xem cụ thể commit",
+            "git diff                                        : xem thay đổi của các modified ( file đã từng add lần sau thay đổi sẽ thành modified)",
+            " ",
+            "",
+            ""
+          ],
+          "link": "https://school.coders-x.com/courses/5b8a1d531a383514ba715fca",
+          "daytime": "18:56 11-5-2020",
+          "id": "qg2jLtjT9"
+        }
+      ],
+      "total": 1
+    },
+    {
+      "name": "UI Design 2018",
+      "code": "",
+      "tcName": "",
+      "id": "f-1fvMvYA",
+      "news": [],
+      "total": 0
+    },
+    {
+      "name": "CSS ( Cascading Style Sheets )",
+      "code": "",
+      "tcName": "",
+      "id": "N6hs0IRaY",
+      "news": [],
+      "total": 0
+    },
+    {
+      "name": "Bootstrap 4",
+      "code": "",
+      "tcName": "",
+      "id": "xVsNb0357",
+      "news": [],
+      "total": 0
     }
   ],
   "TKB": [
@@ -265,16 +393,5 @@
         "123**678901234567*****"
       ]
     }
-  ],
-  "undefined": {
-    "title": "BT Giữa Kỳ nhe",
-    "content": " ",
-    "link": "https://drive.google.com/drive/u/0/folders/157jnJI815SplaRm-RQFL9WJ5LMp3evMc"
-  },
-  "object Object": {
-    "title": "BT Giữa Kỳ",
-    "content": "",
-    "link": "https://drive.google.com/drive/u/0/folders/157jnJI815SplaRm-RQFL9WJ5LMp3evMc",
-    "id": "9lebl48lR"
-  }
+  ]
 }

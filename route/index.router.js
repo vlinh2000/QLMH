@@ -20,4 +20,6 @@ router.get('/change',useController.change)
 
 router.post('/change',useController.postChange);
 
+router.get('/search',useController.search);
+
 module.exports = router;

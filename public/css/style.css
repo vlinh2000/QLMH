@@ -42,4 +42,35 @@ opacity: 0;
 	opacity: 1;
 }
 
+/*english*/
+/*.new-word{
+	position: relative;
+} 
+
+.word-form{
+  position: absolute;
+  display:  none !important;
+}
+.new-word:hover .word-form,
+.new-word:active .word-form{
+display:block !important;
+}*/
+
+/*.tb{
+	border-top: none !important;
+}*/
+.icAudio{
+	cursor: pointer;
+	position: relative;
+}
+
+.audio{
+	display: none;
+	position: absolute;
+	width: 90px;
+	height: 20px;
+	top: 0;
+	left: : 0;
+
+}
 

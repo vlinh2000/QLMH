@@ -239,8 +239,18 @@
       "code": "",
       "tcName": "",
       "id": "_Ls64J0de",
-      "news": [],
-      "total": 0
+      "news": [
+        {
+          "title": "File upload",
+          "content": [
+            " Để upload được 1 file lên server thì trong form cần dùng ' ectype = multipart/form-data '  và cài 1 ' npm multer ' để lưu file đã upload lên "
+          ],
+          "link": "https://school.coders-x.com/courses/5bab88af10dac510bfa58fc1/lessons/5baeff94dbd2c41f609d8e68",
+          "daytime": "10:34 18-5-2020",
+          "id": "SHVE46S1z"
+        }
+      ],
+      "total": 1
     },
     {
       "name": "JavaScript",
@@ -392,6 +402,29 @@
       "week": [
         "123**678901234567*****"
       ]
+    }
+  ],
+  "vocab": [
+    {
+      "id": 0,
+      "word": "hello",
+      "spell": "/həˈləu/",
+      "mean": "xin chào",
+      "audio": "uploads/5a69416c24b94d7c59dd028849d88513"
+    },
+    {
+      "id": 1,
+      "word": "destination",
+      "spell": "/destiˈneiʃən/",
+      "mean": "nơi đến / điểm đến",
+      "audio": "uploads/e1443a198e2303eaadda44af9a7a12a5"
+    },
+    {
+      "word": "arrange",
+      "spell": "/əˈreɪndʒ/",
+      "mean": "sắp xếp",
+      "audio": "uploads/4f986ae9a3ab2c2eb94d334e1748fecf",
+      "id": 2
     }
   ]
 }

@@ -24,9 +24,37 @@
           "link": "https://drive.google.com/drive/u/0/folders/1MU9njidxDaIEVJw-SEssC2nOlgMj1vlm",
           "daytime": "9:38:50 2-5-2020",
           "id": "4fALhTR84"
+        },
+        {
+          "title": "Các câu trắc nghiệm ",
+          "content": [
+            " 1. Khổng Tử",
+            "+ \" Vạn thế sư biểu\" (người thầy muôn đời)",
+            "+ Sinh ra thời kì XUÂN THU",
+            "+ Tên khai sinh : Khổng Khâu",
+            "------------",
+            "2. Nho giáo do Khổng Tử sáng lập : Mạnh Tử , Tuấn Tử",
+            "------------",
+            "3. Tần Thủy Hoàng Bắt 460 nho sĩ chống đối ông",
+            "------------",
+            "4. Công lao Tần Thủy Hoàng : PK phân quyền -> PK tập quyền",
+            "------------",
+            "5. Quân tử : Tu thân - tề gia - trị quốc - bình thiên hạ",
+            "-----------",
+            "6. Tứ đức : Công - Dung - Ngôn - Hạnh",
+            "-----------",
+            "7. Nho giáo chính thức được tiếp nhận vào năm 1070 nhà Lý thành lặp văn miếu Quốc Tử Giám",
+            "-----------",
+            "8. Từ đầu XX nho giáo bắt đầu suy tàn",
+            "-----------",
+            "9. Khoa thi nho học cuối cùng : 1919"
+          ],
+          "link": "",
+          "daytime": "20:4 19-5-2020",
+          "id": "Cr-NHqzMQ"
         }
       ],
-      "total": 2
+      "total": 3
     },
     {
       "name": "Kiến Trúc Máy Tính",
@@ -96,9 +124,32 @@
           "link": "https://drive.google.com/file/d/19TG4qYIAI3sYy2Vt3tkIXpuphfzHpG5b/view?usp=sharing",
           "daytime": "11:56:52 2-5-2020",
           "id": "Ymmly5qyJ"
+        },
+        {
+          "title": "phạm vi ",
+          "content": [
+            "----------------- class  package subclass world ",
+            "public ----------- x-------x---------x--------x",
+            "protected--------x-------x---------x",
+            "no modifier------x-------x",
+            "private-----------x"
+          ],
+          "link": "",
+          "daytime": "19:46 19-5-2020",
+          "id": "oWtGNilHz"
+        },
+        {
+          "title": " Tham chiếu và tham trị",
+          "content": [
+            "Tham chiếu  : -> biến kiểu đối tượng -> thay đổi trong hàm ảnh hưởng đến bên ngoài",
+            "Tham trị : -> biến kiểu nguyên thủy -> thay đổi trong hàm ra ngoài không đổi"
+          ],
+          "link": "",
+          "daytime": "19:48 19-5-2020",
+          "id": "n1N1T0ha8"
         }
       ],
-      "total": 2
+      "total": 4
     },
     {
       "name": "Phân Tích & Thiết Kế Thuật Toán",
@@ -174,9 +225,28 @@
           "link": "",
           "daytime": "22:6 5-5-2020",
           "id": "3F1HsVyP1"
+        },
+        {
+          "title": "Chương 4 Cấu Trúc Dữ Liệu và Thuật Toán Lưu Trữ Ngoài",
+          "content": [
+            " * Các cách lưu trữ thông tin trong tệp tin",
+            "+ tập tin tuần tự",
+            "+ tập tin bảng bâm",
+            "+ tập tin chỉ mục",
+            "+ tập tin B cây  ( B cây : cây tìm kiếm m phân cân bằng bậc m )",
+            "-------------",
+            "1> Nút gốc >= 2 con",
+            "2> Nút trong [ m/2 ] m con ( phần nguyên của m/2)",
+            "vd: m=bậc 7 : 4 - > 7 con ",
+            "3> gốc -> lá có cùng độ dài",
+            "4> cây tìm kiếm"
+          ],
+          "link": "",
+          "daytime": "19:55 19-5-2020",
+          "id": "gyvRRV9MY"
         }
       ],
-      "total": 4
+      "total": 5
     },
     {
       "name": "Cơ Sở Dữ Liệu",
@@ -425,6 +495,13 @@
       "mean": "sắp xếp",
       "audio": "uploads/4f986ae9a3ab2c2eb94d334e1748fecf",
       "id": 2
+    },
+    {
+      "word": "pray",
+      "spell": "/preɪ/",
+      "mean": "cầu nguyện",
+      "audio": "uploads/efd00e702eb4bf22c5a9afd89801d849",
+      "id": 3
     }
   ]
 }

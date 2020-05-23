@@ -74,3 +74,45 @@ display:block !important;
 
 }
 
+/*-----bfgame.pug------*/
+
+.canvas{
+	width: 300px;
+	height: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,60%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url('https://vignette.wikia.nocookie.net/millionaire/images/7/7e/Wwtbam_vietnam_logo-0.jpg/revision/latest?cb=20180426123938');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.play{
+}
+
+#main{
+	border: 3px solid black;
+	padding: 30px;
+	width: 300px;
+	height: 300px;
+	 position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%,60%);
+    
+}
+
+.list{
+ display: flex;
+ align-items: center;
+    justify-content: center;
+}
+
+.result{
+margin-left: 3px;
+}

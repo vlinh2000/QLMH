@@ -1,0 +1,36 @@
+html
+ head
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/mediaquery.css">
+ body
+  div(id='game')
+   audio(src='/audio/start.ogg' class='audio' id='start')
+   .canvas(id='bfgame')
+    button.btn.btn-primary.play(onclick='canvas()') Play
+
+  script.
+   function canvas(){
+    var div = document.getElementById('bfgame');
+    div.style.display = 'none';
+    var audio=document.getElementById('start');
+    playAudio(audio);
+    main();
+   }
+  
+   function playAudio(a){
+   a.play();
+   }
+   
+   function main(){
+    var game=document.getElementById('game');
+    var main = document.createElement('div');
+    main.id='main';
+    main.innerHTML='<h5>Hello</h5><ul class="list"><button class="btn btn-success result">Xin chao</button><button class="btn btn-success result">diem den</button><button class="btn btn-success result">xe hoi</button><button class="btn btn-success result">benh vien</button></ul></div>';
+    game.appendChild(main);
+    
+   } 
+
+
+

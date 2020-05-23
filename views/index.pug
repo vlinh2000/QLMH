@@ -1,55 +1,56 @@
 extends ./common
 
 block content 
- if notif
-  if notif.name.length > 1
-   marquee(scrollamount="10")
-    .d-flex
-     img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
-     p.ml-2="Hôm nay học môn " + notif.name[0] + " tiết " + notif.time[0] + " ở phòng " + notif.classroom[0] + " và môn " + notif.name[1] + " tiết " + notif.time[1] + " ở phòng " + notif.classroom[1] + " nhe sếp !"
-  else
-   marquee(scrollamount="10")
-    .d-flex
-     img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
-     p.ml-2="Hôm nay học môn " + notif.name + " tiết " + notif.time + " ở phòng " + notif.classroom + " nhe sếp !"
+ .index
+  if notif
+   if notif.name.length > 1
+    marquee(scrollamount="10")
+     .d-flex
+      img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
+      p.ml-2="Hôm nay học môn " + notif.name[0] + " tiết " + notif.time[0] + " ở phòng " + notif.classroom[0] + " và môn " + notif.name[1] + " tiết " + notif.time[1] + " ở phòng " + notif.classroom[1] + " nhe sếp !"
+   else
+    marquee(scrollamount="10")
+     .d-flex
+      img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
+      p.ml-2="Hôm nay học môn " + notif.name + " tiết " + notif.time + " ở phòng " + notif.classroom + " nhe sếp !"
 
- else 
-  marquee(scrollamount="10") 
-   .d-flex
-    img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
-    p.ml-2="Hôm nay không có học nha sếp !"
+  else 
+   marquee(scrollamount="10") 
+    .d-flex
+     img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker',  width="30px" height="30px")
+     p.ml-2="Hôm nay không có học nha sếp !"
    
  
- .d-flex
-  a(class="btn btn-primary mb-5 mt-4" href="/subject/create" ) New Subject
-  i.zmdi.zmdi-playlist-audio.zmdi-hc-2x.ml-3.mt-4.imusic
-   audio(src='/audio/VeQue.mp3' controls autoplay loop class='music')
-  form.form-inline.my-2.my-lg-0.ml-auto(action='/search')
-   input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search' name='q')
-   button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+  .d-flex
+   a(class="btn btn-primary mb-5 mt-4" href="/subject/create" ) New Subject
+   i.zmdi.zmdi-playlist-audio.zmdi-hc-2x.ml-3.mt-4.imusic
+    audio(src='/audio/VeQue.mp3' controls autoplay loop class='music')
+   form.form-inline.my-2.my-lg-0.ml-auto(action='/search')
+    input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search' name='q')
+    button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
 
- table.table
-  th Tên Môn
-  th Mã Môn
-  th Tên Giáo Viên
-  th Trạng Thái
-  th Chi Tiết
+  table.table
+   th Tên Môn
+   th Mã Môn
+   th Tên Giáo Viên
+   th Trạng Thái
+   th Chi Tiết
  
-  each sub in subjects 
-   tr 
-    td=sub.name
-    td=sub.code
-    td=sub.tcName
-    if sub.total === 0
+   each sub in subjects 
+    tr 
+     td=sub.name
+     td=sub.code
+     td=sub.tcName
+     if sub.total === 0
+      td
+       i.zmdi.zmdi-notifications-none.zmdi-hc-lg.icNof.text-primary     
+     else
+      td
+       .notification
+        i.zmdi.zmdi-notifications.zmdi-hc-lg.icNof.text-primary
+        p.total=sub.total  
      td
-      i.zmdi.zmdi-notifications-none.zmdi-hc-lg.icNof.text-primary     
-    else
-     td
-      .notification
-       i.zmdi.zmdi-notifications.zmdi-hc-lg.icNof.text-primary
-       p.total=sub.total  
-    td
-     a(href="/subject/"+ sub.id) view
+      a(href="/subject/"+ sub.id) view
 
 
  

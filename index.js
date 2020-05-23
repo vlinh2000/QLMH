@@ -7,7 +7,7 @@ var loginRouter=require('./route/login.router');
 var tkbRouter = require('./route/tkb.route');
 var pjRouter =require('./route/project.route');
 var engRouter=require('./route/english.route');
-
+var gRouter=require('./route/game.route');
 var authMiddleware = require("./middleware/auth.middleware");
 
 app.use(cookieParser("csadsa"));
@@ -26,10 +26,10 @@ app.use('/project',pjRouter);
 
 app.use('/',engRouter);
 
+app.use('/',gRouter);
+
+
 app.use(express.static('public'));
-
-
-
 
 app.listen(3000,()=>console.log("sever loading on port 3000"));
 

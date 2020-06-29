@@ -2,6 +2,7 @@
   "subject": [
     {
       "name": "Cơ Sở Văn Hóa",
+      "time": "2019hk2",
       "code": "XH001 - 07",
       "tcName": "Phạm Tuấn Anh",
       "id": "xGfLbcPj8",
@@ -58,6 +59,7 @@
     },
     {
       "name": "Kiến Trúc Máy Tính",
+      "time": "2019hk2",
       "code": "CT173 - 06",
       "tcName": "Đỗ Thanh Nghị",
       "id": "KvSt3vRCO",
@@ -101,6 +103,7 @@
     },
     {
       "name": "Lập Trình Hướng Đối Tượng",
+      "time": "2019hk2",
       "code": "CT176 - 09",
       "tcName": "Triệu Thanh Ngoan",
       "id": "oQJA4qVIG",
@@ -153,6 +156,7 @@
     },
     {
       "name": "Phân Tích & Thiết Kế Thuật Toán",
+      "time": "2019hk2",
       "code": "CT174 - 02",
       "tcName": "Võ Huỳnh Trâm",
       "id": "IBskTQcqQ",
@@ -250,6 +254,7 @@
     },
     {
       "name": "Cơ Sở Dữ Liệu",
+      "time": "2019hk2",
       "code": "CT180 - 04",
       "tcName": "Phạm Thị Xuân Lộc",
       "id": "uIrYoakHg",
@@ -288,6 +293,7 @@
     },
     {
       "name": "Đường Lối ĐCS VN",
+      "time": "2019hk2",
       "code": "ML011 - 08",
       "tcName": "Phan Thị Phương Anh",
       "id": "aOi8Qscjw",
@@ -306,6 +312,7 @@
     },
     {
       "name": "EXPRESS JS",
+      "time": "richhkcodersx",
       "code": "",
       "tcName": "",
       "id": "_Ls64J0de",
@@ -324,6 +331,7 @@
     },
     {
       "name": "JavaScript",
+      "time": "richhkcodersx",
       "code": "",
       "tcName": "",
       "id": "3gCvJ-8yM",
@@ -507,6 +515,7 @@
     },
     {
       "name": "HTML",
+      "time": "richhkcodersx",
       "code": "",
       "tcName": "",
       "id": "h_wa7gtX_",
@@ -515,6 +524,7 @@
     },
     {
       "name": "Git",
+      "time": "richhkcodersx",
       "code": "",
       "tcName": "",
       "id": "FsvVomCuQ",
@@ -541,6 +551,7 @@
     },
     {
       "name": "UI Design 2018",
+      "time": "richhkcodersx",
       "code": "",
       "tcName": "",
       "id": "f-1fvMvYA",
@@ -549,6 +560,7 @@
     },
     {
       "name": "CSS ( Cascading Style Sheets )",
+      "time": "richhkcodersx",
       "code": "",
       "tcName": "",
       "id": "N6hs0IRaY",
@@ -557,9 +569,19 @@
     },
     {
       "name": "Bootstrap 4",
+      "time": "richhkcodersx",
       "code": "",
       "tcName": "",
       "id": "xVsNb0357",
+      "news": [],
+      "total": 0
+    },
+    {
+      "name": "Vi Tích Phân A2",
+      "time": "2019hk3",
+      "code": "TN002",
+      "tcName": "Chưa Biết",
+      "id": "6lH5p0d-n",
       "news": [],
       "total": 0
     }

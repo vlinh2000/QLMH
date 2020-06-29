@@ -7,6 +7,7 @@ var today = new Date();
 var day = (today.getDay()+1).toString();
 var notif = db.get("TKB").find({id: day}).value();
 module.exports.get= function(req,res){
+	 var subject = db.get("subject").value().filter((x)=>x.time==="2019hk2");
 	res.render('index',{
 		subjects : subject,
 		notif: notif
@@ -104,4 +105,16 @@ module.exports.search= function(req,res){
 		subjects : subject,
 		notif: notif
 	});
+}
+
+module.exports.post=function(req,res){
+	var yeaterm = req.body.year+'hk'+req.body.term;
+	var subFiltered = db.get("subject").value().filter((x)=>x.time===yeaterm);
+	var returnYear=req.body.year;  
+	console.log(subFiltered);
+	res.render('index',{
+		subjects:subFiltered,
+		year:returnYear,
+		term:req.body.term
+	})
 }

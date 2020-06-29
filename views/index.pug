@@ -28,8 +28,45 @@ block content
    form.form-inline.my-2.my-lg-0.ml-auto(action='/search')
     input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search' name='q')
     button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+   
+  
+  label.text-success.mr-3 Năm học
+   select.ml-2(name="year" form="year&term") 
+    if year
+      if year==="2019"
+       option(selected value=year)=year+'-2020'
+       option(value="2020")="2020-2021"
+       option(value="rich")="codersx"
+      else if year==="2020"
+        option(value="2020" selected)="2020-2021"
+        option(value="2019")="2019-2020"
+        option(value="rich")="codersx"
+      else
+        option(value="2019")="2019-2020"
+        option(value="2020")="2020-2021"
+        option(value="rich" selected)="codersx"
+    else 
+     option(value="2019" selected) 2019-2020 
+     option(value="2020") 2020-2021
+     option(value="rich") codersx
 
-  table.table
+  label.text-success Học kỳ 
+   select.ml-2(name="term" form="year&term") 
+    if term 
+     each t in ['1','2','3','codersx']
+      if t===term
+       option(selected value=t)=t
+      else
+       option(value=t)=t 
+    else
+     option(value=1) 1
+     option(value=2 selected) 2
+     option(value=3) 3
+     option(value="codersx") codersx
+  form(action="/" method="POST" id="year&term" style="display:inline").ml-4
+   button(type="submit") Liet Ke
+
+  table.table.mt-3
    th Tên Môn
    th Mã Môn
    th Tên Giáo Viên
@@ -54,6 +91,4 @@ block content
 
 
  
- 
-
 

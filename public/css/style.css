@@ -98,21 +98,33 @@ display:block !important;
 #main{
 	border: 3px solid black;
 	padding: 30px;
-	width: 300px;
-	height: 300px;
-	 position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-40%,60%);
-    
+	width: 500px;
+	height: 400px;
+  margin: 100px auto;
 }
 
 .list{
- display: flex;
+ /*display: flex;
  align-items: center;
-    justify-content: center;
+    justify-content: center;*/
+    list-style: none;
+    margin-top: 20%;
 }
-
-.result{
+.list li{
+  border: 1px solid green;
+  padding: 3px 0px;
+  margin-bottom:2px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+/*.result{
 margin-left: 3px;
+}*/
+
+#game{
+  position: relative;
+}
+.question{
+  text-align: center;
 }

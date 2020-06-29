@@ -327,8 +327,183 @@
       "code": "",
       "tcName": "",
       "id": "3gCvJ-8yM",
-      "news": [],
-      "total": 0
+      "news": [
+        {
+          "title": "1. Thuật ngữ ( terms ) là gì?                   ",
+          "content": [
+            "Biến (variable)",
+            "Mảng (array)",
+            "Hàm (function)",
+            "Kiểu Dữ Liệu (Data Type)",
+            ""
+          ],
+          "link": "",
+          "daytime": "19:31 23-5-2020",
+          "id": "z4HioacTY"
+        },
+        {
+          "title": "7. Data Types",
+          "content": [
+            "Primitive types: Kiểu nguyên thủy",
+            "- Number   // var a = -100",
+            "- String      // var str3 =' Hello , i'm Linh ' : để in ra được  i'm thì phải thêm dấu xoẹt \\  => var str3 = 'Hello , i\\'m Linh' kĩ thuật này được gọi là escape character",
+            "- Boolean   (true, false) : ",
+            "",
+            "Specials types:",
+            "- undefined  // var a;   console.log(a) => undefined do a chỉ khai báo nhưng chưa gán giá trị",
+            "- null  // rỗng",
+            "",
+            "Reference types:",
+            "- Array  // terms : array ,element , index, length ||  var arr=[{..},{..}];  var arr = [] ;",
+            "- Object // var myDog ={name:'cho', age: 18 }  => có 2 cách truy xuất đến thuộc tính .1 => myDog.name hoặc 2=>myDog['name']"
+          ],
+          "link": "",
+          "daytime": "20:3 23-5-2020",
+          "id": "xyIcmqrSy"
+        },
+        {
+          "title": "8 -  Arithmetic operaters ( Các toán tử số học)",
+          "content": [
+            "1. ++ -- ( increment decrement)",
+            "a++ : sẽ thay đổi giá trị của a SAU lúc đấy ||  var a= 0 ; a++ => trả về a=0 ; a => trả về a=1",
+            "++a : sẽ thay đổi giá trị của a NGAY lúc đấy và trả về giá trị đã được tăng r ||  var a= 0 ; ++a => trả về a=1",
+            "VD : var a = 5 ;  a++ + ++a = // 5 + 7 = 12 // a++ : lúc này a =5 sau đó a=6 tiếp theo ++a nên a = 7",
+            "         var a = 5; var b= 10; || a++* b-- + --a * ++b  || => 100",
+            "2. * / % ",
+            "3. + -",
+            "4.  Assignment oparators (phép gán )",
+            "= += -= *=  /="
+          ],
+          "link": "",
+          "daytime": "20:25 23-5-2020",
+          "id": "4qfrLdher"
+        },
+        {
+          "title": "12 - Comparison operators (Các phép toán so sánh)",
+          "content": [
+            "> < >= <= === !=== "
+          ],
+          "link": "",
+          "daytime": "20:34 23-5-2020",
+          "id": "OFCnIeRl1"
+        },
+        {
+          "title": "13 - Vòng lặp for",
+          "content": [
+            " 1. for(init ; condition ; final expression){ ",
+            "statements ;",
+            "}",
+            "Initialization : khởi tạo",
+            "condition: điều kiện ",
+            "final expression: biểu thức cuối cùng",
+            "VD : for(var i=0;i<9;i++){",
+            "console.log(i);",
+            "}",
+            "2 .For ..of",
+            "Lặp trong 1 mảng ",
+            "VD: ",
+            "var employees=[ {name:\"linh\",age:20},{name:\"linh1\",age:20}];",
+            "for(var employee of employees){",
+            "}",
+            "=> Lúc này employee là 1 object trong mảng",
+            "3.For .. in ",
+            "Lặp qua từng key trong 1 object",
+            "VD: myDog={name:'heo', age:5}",
+            "for(var key in myDog){",
+            "}",
+            "=> Lúc này key là mỗi thuộc tính trong object"
+          ],
+          "link": "https://www.youtube.com/watch?v=Vvo16A79L0U&list=PLkY6Xj8Sg8-uPZnTdScfuH0xD-O6Kb-V-&index=15",
+          "daytime": "20:50 23-5-2020",
+          "id": "1ILrQDBDB"
+        },
+        {
+          "title": "15 - Array methods",
+          "content": [
+            " a.concat(b) //  trả về 1 mảng mới gồm mảng a và mảng b sau mảng a",
+            "a.push(b) // cho b vào vi tri cuối mảng a",
+            "a.pop() // xóa 1 phần tử cuối mảng",
+            "a.shift() // lấy ra phần tử đầu của mảng",
+            "a.unshift(b) thêm b vào đầu mảng",
+            ""
+          ],
+          "link": "https://www.youtube.com/watch?v=cj8gS5-_XlA&list=PLkY6Xj8Sg8-uPZnTdScfuH0xD-O6Kb-V-&index=16",
+          "daytime": "10:4 24-5-2020",
+          "id": "6ySI-uQJp"
+        },
+        {
+          "title": "16 - Dùng function như tham số (Callback)",
+          "content": [
+            " var makeCofee = {",
+            "  make : function(onFinish){",
+            "    console.log(\"making.....\");",
+            "    onFinish();",
+            "  } }",
+            "var beep=function(){",
+            "  console.log('tit tit');",
+            "}",
+            "makeCofee.make(beep); // cach 1",
+            "",
+            "makeCofee.make(function(){    // cach 2",
+            "  console.log('oc oc');",
+            "})",
+            "",
+            "=> Callback là khi goi hàm nào đó tham số là 1 hàm khác !"
+          ],
+          "link": "https://www.youtube.com/watch?v=J-Htg5JN7Uo&list=PLkY6Xj8Sg8-uPZnTdScfuH0xD-O6Kb-V-&index=17",
+          "daytime": "10:14 24-5-2020",
+          "id": "c4cdYANzJ"
+        },
+        {
+          "title": "17 - Array  methods ( map,filter,reduce )",
+          "content": [
+            " Array.map( function(x){",
+            "//transform : biến đổi",
+            "return newValue;",
+            "}",
+            "=> Mục đích dùm map để biến đổi mảng ban đầu thành mảng mới",
+            "-------------------------",
+            " Array.filter( function(x){",
+            "// filter : lọc",
+            "return newValue;  // true or false",
+            "}",
+            "=> Mục đích để lọc ra value thỏa yêu cầu ở return vd: x%2===0",
+            "EX: var array=[1,1,2,2,2,2,3];",
+            "",
+            "function removeDuplicate(array){",
+            "  return array.filter((x,index)=>array.indexOf(x)===index);",
+            "}",
+            "",
+            "removeDuplicate(array);",
+            "==> [1,2,3] Xóa phần tử bị trùng",
+            "-------------------------",
+            " Array.find( function(x){",
+            "//find ",
+            "return x; //true or false ",
+            "}",
+            "=> khi hàm trả về gia trị true thì dừng không tìm nữa vd: x%2===0 giá trị nào trong mảng đúng đầu tiên thì trả về xong không tìm nữa",
+            "EX:var orders=",
+            "[",
+            "  {name:\"A\",quanlity: 2, unitPrice:100},",
+            "  {name:\"B\",quanlity: 1, unitPrice:400},",
+            "  {name:\"C\",quanlity: 5, unitPrice:15},",
+            "];",
+            "",
+            "orders.reduce(function(a,b){",
+            "  return a+ b.unitPrice;",
+            "},0);",
+            "==> 515",
+            "",
+            "",
+            "",
+            ""
+          ],
+          "link": "https://www.youtube.com/watch?v=DgU8Sz4U9EA&list=PLkY6Xj8Sg8-uPZnTdScfuH0xD-O6Kb-V-&index=19",
+          "daytime": "12:21 29-6-2020",
+          "id": "nX7rF8aio"
+        }
+      ],
+      "total": 8
     },
     {
       "name": "HTML",

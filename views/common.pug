@@ -14,22 +14,21 @@ html
       div(class='collapse navbar-collapse' id='navbarNav' )
        ul.navbar-nav
         li.nav-item
-         a.nav-link.active(href='/') Home 
+         a.nav-link(href='/') Home 
         li.nav-item
-         a.nav-link.active(href='/tkb') Timetable
+         a.nav-link(href='/tkb') Timetable
         li.nav-item
-         a.nav-link.active(href='/project') Project
+         a.nav-link(href='/project') Project
         li.nav-item
-         a.nav-link.active(href='/english') English
+         a.nav-link(href='/english') English
         li.nav-item
-         a.nav-link.active(href='/game') Game
+         a.nav-link(href='/game') Game
 
        
 
       if name
        p.text-danger.hi="Hi sếp "+ name
-  .container.mt-5.main
-   block content
+  block content
 
 
  

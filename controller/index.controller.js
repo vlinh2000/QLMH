@@ -111,10 +111,10 @@ module.exports.post=function(req,res){
 	var yeaterm = req.body.year+'hk'+req.body.term;
 	var subFiltered = db.get("subject").value().filter((x)=>x.time===yeaterm);
 	var returnYear=req.body.year;  
-	console.log(subFiltered);
 	res.render('index',{
 		subjects:subFiltered,
 		year:returnYear,
-		term:req.body.term
+		term:req.body.term,
+		notif: notif
 	})
 }

@@ -1,74 +1,74 @@
 extends ./common
 
 block content
- 
- if notif
-  if notif.name.length > 1
-   marquee(scrollamount="10")
-    .d-flex
-     img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
-     p.ml-2="Hôm nay học môn " + notif.name[0] + " tiết " + notif.time[0] + " ở phòng " + notif.classroom[0] + " và môn " + notif.name[1] + " tiết " + notif.time[1] + " ở phòng " + notif.classroom[1] + " nhe sếp !"
-  else
-   marquee(scrollamount="10")
-    .d-flex
-     img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
-     p.ml-2="Hôm nay học môn " + notif.name + " tiết " + notif.time + " ở phòng " + notif.classroom + " nhe sếp !"
-
- else 
-  marquee(scrollamount="10") 
-   .d-flex
-    img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
-    p.ml-2="Hôm nay không có học nha sếp !"
-
-
- h6.mb-4.mt-4 THỜI KHÓA BIỂU
-
-
- table.table
-  th Thứ
-  th Tên môn học
-  th Tiết
-  th Phòng 
-  th Tuần học
-  each day in TKB
-   if today === day.id 
-    tr
-     td.text-danger=day.id
-     td
-      each sub in day.name
-       span.text-danger=sub
-       br
-     td
-      each time in day.time
-       span.text-danger=time
-       br
-     td
-      each room in day.classroom
-       span.text-danger=room
-       br
-     td
-      each week in day.week
-       span.text-danger=week
-       br
+ .container.full-tkb
+  if notif
+   if notif.name.length > 1
+    marquee(scrollamount="10")
+     .d-flex
+      img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
+      p.ml-2="Hôm nay học môn " + notif.name[0] + " tiết " + notif.time[0] + " ở phòng " + notif.classroom[0] + " và môn " + notif.name[1] + " tiết " + notif.time[1] + " ở phòng " + notif.classroom[1] + " nhe sếp !"
    else
-    tr
-     td=day.id
-     td
-      each sub in day.name
-       span=sub
-       br
-     td
-      each time in day.time
-       span=time
-       br
-     td
-      each room in day.classroom
-       span=room
-       br
-     td
-      each week in day.week
-       span=week
-       br
+    marquee(scrollamount="10")
+     .d-flex
+      img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
+      p.ml-2="Hôm nay học môn " + notif.name + " tiết " + notif.time + " ở phòng " + notif.classroom + " nhe sếp !"
+
+  else 
+   marquee(scrollamount="10") 
+    .d-flex
+     img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
+     p.ml-2="Hôm nay không có học nha sếp !"
+  
+  .tkb.p-5
+    h6.mb-4.mt-4.text-white.d-flex.justify-content-center THỜI KHÓA BIỂU
+
+
+    table.table.main-tkb
+     th.text-white Thứ
+     th.text-white Tên môn học
+     th.text-white Tiết
+     th.text-white Phòng 
+     th.text-white Tuần học
+     each day in TKB
+      if today === day.id 
+       tr
+        td.text-danger=day.id
+        td
+         each sub in day.name
+          span.text-danger=sub
+          br
+        td
+         each time in day.time
+          span.text-danger=time
+          br
+        td
+         each room in day.classroom
+          span.text-danger=room
+          br
+        td
+         each week in day.week
+          span.text-danger=week
+          br
+      else
+       tr
+        td.text-white=day.id
+        td
+         each sub in day.name
+          span.text-white=sub
+          br
+        td
+         each time in day.time
+          span.text-white=time
+          br
+        td
+         each room in day.classroom
+          span.text-white=room
+          br
+        td
+         each week in day.week
+          span.text-white=week
+          br
 
 
   	

@@ -1,42 +1,33 @@
 extends ./common
 
 block content 
- a.btn.btn-success.mb-2(href='/english/create')  New
- if vocab
- .row
-  table.table.tb
-   tr
-      th Từ
-      th Phiên Âm
-      th Nghĩa
-      th Âm Thanh
-   each words in vocab 
-     tr
-      td=words.word
-      td=words.spell
-      td=words.mean
-      td
-       i(class="zmdi zmdi-volume-up zmdi-hc-lg icAudio" onclick='playAudio(this.id)' id='icon'+words.id )
-        audio(controls src=words.audio class='audio' id='myAudio'+words.id)
+ .container.mt-5
+  a.btn.btn-success.mb-2(href='/english/create')  New
+  if vocab
+  .row
+   table.table.tb
+    tr
+       th Từ
+       th Phiên Âm
+       th Nghĩa
+       th Âm Thanh
+    each words in vocab 
+      tr
+       td=words.word
+       td=words.spell
+       td=words.mean
+       td
+        i(class="zmdi zmdi-volume-up zmdi-hc-lg icAudio" onclick='playAudio(this.id)' id='icon'+words.id )
+         audio(controls src=words.audio class='audio' id='myAudio'+words.id)
 
 
- script.
-  function playAudio(id){
-    var au = id.replace('icon','myAudio');
-    var audio =document.getElementById(au);
-    audio.play();
-  }
-  //- var ic=document.getElementById('icon0')
-  //- var audio =document.getElementById('myAudio0')
-  //- ic.addEventListener('click',function(){
-  //- audio.play();
-  //- })
-
-  //- var ic=document.getElementById('icon1')
-  //- var audio =document.getElementById('myAudio1')
-  //- ic.addEventListener('click',function(){
-  //- audio.play();
-  //- })
+  script.
+   function playAudio(id){
+     var au = id.replace('icon','myAudio');
+     var audio =document.getElementById(au);
+     audio.play();
+   }
+  
   
   
 

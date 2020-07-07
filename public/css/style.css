@@ -1,5 +1,9 @@
 /*index.pug*/
 
+.index{
+margin-top: 50px;
+}
+
 .notification{
   position: relative;
   height: 30px;

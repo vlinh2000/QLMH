@@ -1,93 +1,100 @@
 extends ./common
 
 block content 
- .container.index
-  if notif
-   if notif.name.length > 1
-    marquee(scrollamount="10")
-     .d-flex
-      img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
-      p.ml-2="Hôm nay học môn " + notif.name[0] + " tiết " + notif.time[0] + " ở phòng " + notif.classroom[0] + " và môn " + notif.name[1] + " tiết " + notif.time[1] + " ở phòng " + notif.classroom[1] + " nhe sếp !"
-   else
-    marquee(scrollamount="10")
-     .d-flex
-      img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
-      p.ml-2="Hôm nay học môn " + notif.name + " tiết " + notif.time + " ở phòng " + notif.classroom + " nhe sếp !"
-
-  else 
-   marquee(scrollamount="10") 
-    .d-flex
-     img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker',  width="30px" height="30px")
-     p.ml-2="Hôm nay không có học nha sếp !"
-   
- 
-  .d-flex
-   a(class="btn btn-primary mb-5 mt-4" href="/subject/create" ) New Subject
-   i.zmdi.zmdi-playlist-audio.zmdi-hc-2x.ml-3.mt-4.imusic
-    audio(src='/audio/VeQue.mp3' controls autoplay loop class='music')
-   form.form-inline.my-2.my-lg-0.ml-auto(action='/search')
-    input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search' name='q')
-    button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
-   
-  
-  label.text-success.mr-3 Năm học
-   select.ml-2(name="year" form="year&term") 
-    if year
-      if year==="2019"
-       option(selected value=year)=year+'-2020'
-       option(value="2020")="2020-2021"
-       option(value="rich")="codersx"
-      else if year==="2020"
-        option(value="2020" selected)="2020-2021"
-        option(value="2019")="2019-2020"
-        option(value="rich")="codersx"
-      else
-        option(value="2019")="2019-2020"
-        option(value="2020")="2020-2021"
-        option(value="rich" selected)="codersx"
-    else 
-     option(value="2019" selected) 2019-2020 
-     option(value="2020") 2020-2021
-     option(value="rich") codersx
-
-  label.text-success Học kỳ 
-   select.ml-2(name="term" form="year&term") 
-    if term 
-     each t in ['1','2','3','codersx']
-      if t===term
-       option(selected value=t)=t
-      else
-       option(value=t)=t 
-    else
-     option(value=1) 1
-     option(value=2 selected) 2
-     option(value=3) 3
-     option(value="codersx") codersx
-  form(action="/" method="POST" id="year&term" style="display:inline").ml-4
-   button(type="submit") Liet Ke
-
-  table.table.mt-3
-   th Tên Môn
-   th Mã Môn
-   th Tên Giáo Viên
-   th Trạng Thái
-   th Chi Tiết
- 
-   each sub in subjects 
-    tr 
-     td=sub.name
-     td=sub.code
-     td=sub.tcName
-     if sub.total === 0
-      td
-       i.zmdi.zmdi-notifications-none.zmdi-hc-lg.icNof.text-primary     
+ .container-fluid.full-screen
+  .container-fluid.index
+    if notif
+     if notif.name.length > 1
+      marquee(scrollamount="10" class="notif")
+       .d-flex
+        img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
+        p.ml-2="Hôm nay học môn " + notif.name[0] + " tiết " + notif.time[0] + " ở phòng " + notif.classroom[0] + " và môn " + notif.name[1] + " tiết " + notif.time[1] + " ở phòng " + notif.classroom[1] + " nhe sếp !"
      else
-      td
-       .notification
-        i.zmdi.zmdi-notifications.zmdi-hc-lg.icNof.text-primary
-        p.total=sub.total  
-     td
-      a(href="/subject/"+ sub.id) view
+      marquee(scrollamount="10" class="notif")
+       .d-flex
+        img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker', width="30px" height="30px")
+        p.ml-2="Hôm nay học môn " + notif.name + " tiết " + notif.time + " ở phòng " + notif.classroom + " nhe sếp !"
+
+    else 
+     marquee(scrollamount="10" class="notif") 
+      .d-flex
+       img(src='http://gickr.com/results2/anim_72727357-d301-9254-190a-382a08099920.gif', alt='gif maker',  width="30px" height="30px")
+       p.ml-2="Hôm nay không có học nha sếp !"
+     
+   
+    .new-subject
+     a(class="btn btn-primary mb-3 mt-4" href="/subject/create" ) New Subject
+     i.zmdi.zmdi-playlist-audio.zmdi-hc-2x.ml-3.mt-4.imusic
+      audio(src='/audio/VeQue.mp3' controls autoplay loop class='music')
+     
+    .container
+     .row
+      .group-filter.shadow-lg.col-12.col-sm-6
+       label.text-white.mr-3 Năm học
+        select.ml-2(name="year" form="year&term") 
+         if year
+           if year==="2019"
+            option(selected value=year)=year+'-2020'
+            option(value="2020")="2020-2021"
+            option(value="rich")="codersx"
+           else if year==="2020"
+             option(value="2020" selected)="2020-2021"
+             option(value="2019")="2019-2020"
+             option(value="rich")="codersx"
+           else
+             option(value="2019")="2019-2020"
+             option(value="2020")="2020-2021"
+             option(value="rich" selected)="codersx"
+         else 
+          option(value="2019" selected) 2019-2020 
+          option(value="2020") 2020-2021
+          option(value="rich") codersx
+
+       label.text-white Học kỳ 
+        select.ml-2(name="term" form="year&term") 
+         if term 
+          each t in ['1','2','3','codersx']
+           if t===term
+            option(selected value=t)=t
+           else
+            option(value=t)=t 
+         else
+          option(value=1) 1
+          option(value=2 selected) 2
+          option(value=3) 3
+          option(value="codersx") codersx
+       form(action="/" method="POST" id="year&term" style="display:inline").ml-4
+        button(type="submit").btn-primary Liet Ke
+
+      .col-sm-2
+
+      form.form-inline.my-2.col-12.col-sm-4(action='/search')
+       input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search' name='q')
+       button.btn.btn-success.my-2.my-sm-0(type='submit') Search
+
+
+    table.table.mt-5.table-index
+     th.text-white Tên Môn
+     th.text-white Mã Môn
+     th.text-white Tên Giáo Viên
+     th.text-white Trạng Thái
+     th.text-white Chi Tiết
+   
+     each sub in subjects 
+      tr.text-white 
+       td.text-white=sub.name
+       td.text-white=sub.code
+       td.text-white=sub.tcName
+       if sub.total === 0
+        td.text-white
+         i.zmdi.zmdi-notifications-none.zmdi-hc-lg.icNof.text-primary     
+       else
+        td.text-white
+         .notification
+          i.zmdi.zmdi-notifications.zmdi-hc-lg.icNof.text-primary
+          p.total=sub.total  
+       td.text-white
+        a(href="/subject/"+ sub.id) view
 
   
 

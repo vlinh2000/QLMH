@@ -1,7 +1,30 @@
 /*index.pug*/
+.full-screen{
+  background-image: url('../img/bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+}
+
+.group-filter{
+  border: 3px solid #101010;
+  display: inline;
+  padding: 20px 40px;
+  border-radius: 20px;
+  background-color: rgba(5,5,5,0.6);
+}
 
 .index{
-margin-top: 50px;
+width: 70%;
+padding-top: 30px;
+}
+
+.table-index{
+  background-color: rgba(0,0,0,0.9);
+  box-shadow: 40px 25px 50px #191919;
+  border-radius: 20px;
+  filter: brightness(80%);
 }
 
 .notification{
@@ -9,6 +32,12 @@ margin-top: 50px;
   height: 30px;
   display: flex;
   align-items: center;
+}
+
+.notif{
+  background-color: white;
+  border-radius: 20px;
+  height: 30px;
 }
 
 .total{
@@ -33,8 +62,8 @@ border-radius: 5px;
 
 
 .imusic{
-cursor: pointer;
 position: relative;
+display: none;
 }
 
 .music{
@@ -44,9 +73,9 @@ left:0;
 opacity: 0;
 }
 
-.imusic:hover .music {
+/*.imusic:hover .music {
 	opacity: 1;
-}
+}*/
 
 /*english*/
 /*.new-word{

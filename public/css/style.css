@@ -109,6 +109,32 @@ display:block !important;
 
 }
 
+/*-----detailSub.pug---*/
+
+.full-detaSub{
+  background-color: #191919;
+}
+
+.a-news{
+  background-color: #282828;
+  border: 1px solid #444444;
+}
+.full-note{
+  margin: 0 auto;
+}
+.break{
+  height: 20px;
+}
+.head-detaSub{
+  border: 1px solid #444444;
+  display: inline-block;
+  padding: 10px;
+  border-top-left-radius:20px;
+  border-bottom-right-radius: 20px; 
+}
+
+
+
 /*-----bfgame.pug------*/
 
 .canvas{

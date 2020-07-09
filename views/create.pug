@@ -1,25 +1,26 @@
 extends ./common
 
 block content
- 
- form(action="/subject/create" method="POST" class="w-50 m-auto" ) 
-  .form-group
-   label(for='name') Tên môn học :
-   input#name(class="form-control" name = "name" type="text") 
+ .container-fluid.full-create
+  .container-fluid.form-create
+     form(action="/subject/create" method="POST" class="w-50 m-auto" ) 
+      .form-group
+       label(for='name').text-white Tên môn học :
+       input#name(class="form-control" name = "name" type="text") 
 
-  .form-group
-   label(for='time') Năm - Học Kỳ: ( cú pháp : namhkhocki vd: 2019hk1)
-   input#code(class="form-control" name="time" type="text") 
+      .form-group
+       label(for='time').text-white Năm - Học Kỳ: ( VD: 2019hk1)
+       input#code(class="form-control" name="time" type="text") 
 
-  .form-group
-   label(for='code') Mã môn :
-   input#code(class="form-control" name="code" type="text") 
+      .form-group
+       label(for='code').text-white Mã môn :
+       input#code(class="form-control" name="code" type="text") 
 
-   .form-group
-   label(for='code') Tên Giáo Viên :
-   input#teacher-name(class="form-control" name="tcName" type="text") 
+       .form-group
+       label(for='code').text-white Tên Giáo Viên :
+       input#teacher-name(class="form-control" name="tcName" type="text") 
 
-  button.btn.btn-primary Accept
+      button.btn.btn-primary Accept
 
 
    

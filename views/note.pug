@@ -1,17 +1,18 @@
 extends ./common
 
 block content
- 
- h5 New Note
- form(action="/note/"+id  method="POST" class="m-5" ) 
-  .form-group
-   input(class="form-control" name = "title" type="text" placeholder="Tiêu đề") 
+ .container-fluid.full-note1
+  .container-fluid.form-note1
+   h5.text-white.text-center New Note
+   form(action="/note/"+id  method="POST" class="m-5" ) 
+    .form-group
+     input(class="form-control" name = "title" type="text" placeholder="Tiêu đề") 
 
-  .form-group 
-   textarea(class="form-control h-25" name="content" type="text" placeholder="Nội dung" ) 
+    .form-group 
+     textarea(class="form-control h-25" name="content" type="text" placeholder="Nội dung" ) 
 
-  .form-group
-   input(class="form-control" name = "link" type="url" placeholder="link") 
+    .form-group
+     input(class="form-control" name = "link" type="url" placeholder="link") 
 
-  button.btn.btn-primary Lưu
+    button.btn.btn-primary Lưu
    

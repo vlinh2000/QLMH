@@ -4,7 +4,7 @@ block content
  .container-fluid.full-detaSub
   .container.pt-5
      .head-detaSub.mb-5
-       h5.text-white=subject.name 
+       h5.text-white(id="ola")=subject.name 
        a.btn.btn-primary(href="/note/"+subject.id class="mb-2 mt-2") Note
 
      table.full-note
@@ -22,6 +22,8 @@ block content
          a(href=news.link , target="_blank")= news.link
          h6.small.text-danger.font-weight-light.mt-5= "Đăng lúc: " + news.daytime
         tr.break 
+
+
 
 
  

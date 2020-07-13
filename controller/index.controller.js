@@ -7,7 +7,7 @@ var today = new Date();
 var day = (today.getDay()+1).toString();
 var notif = db.get("TKB").find({id: day}).value();
 module.exports.get= function(req,res){
-	 var subject = db.get("subject").value().filter((x)=>x.time==="2019hk2");
+	 var subject = db.get("subject").value().filter((x)=>x.time==="2019hk3");
 	res.render('index',{
 		subjects : subject,
 		notif: notif

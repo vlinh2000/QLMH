@@ -1,7 +1,7 @@
 extends ./common
 
 block content 
- .container-fluid.full-screen
+ .container-fluid.full-screen(id="full-index")
   .container-fluid.index
     if notif
      if notif.name.length > 1
@@ -24,6 +24,7 @@ block content
    
     .new-subject
      a(class="btn btn-primary mb-3 mt-4" href="/subject/create" ) New Subject
+     button.btn.btn-primary.mb-3.mt-4.ml-2(onclick="show();") Xem Điểm
      i.zmdi.zmdi-playlist-audio.zmdi-hc-2x.ml-3.mt-4.imusic
       audio(src='/audio/VeQue.mp3' controls autoplay loop class='music')
      
@@ -60,8 +61,8 @@ block content
             option(value=t)=t 
          else
           option(value=1) 1
-          option(value=2 selected) 2
-          option(value=3) 3
+          option(value=2) 2
+          option(value=3 selected) 3
           option(value="codersx") codersx
        form(action="/" method="POST" id="year&term" style="display:inline").ml-4
         button(type="submit").btn-primary Liet Ke
@@ -96,8 +97,31 @@ block content
        td.text-white
         a(href="/subject/"+ sub.id) view
 
-  
+ iframe(class="ctu-result" id="ctu-view" src="https://qldt.ctu.edu.vn/htql/sinhvien/qldiem/codes/index.php?mID=201" title="W3Schools Free Online Web Tutorials" width="1000px" height="500px")
+ i.zmdi.zmdi-close-circle(id ="iclose" class="ic-close" onclick="stop();")
+ 
 
+  
+ script.
+  function show(){
+  var iframe =document.getElementById("ctu-view");
+  var body = document.getElementById("full-index")
+  body.style.filter="brightness(50%)" ;
+  iframe.style.display="block";
+  iframe.style.filter="gayscale(20%)";
+   var icon = document.getElementById("iclose");
+  icon.style.display="block";
+  }
+
+  function stop(){
+  var iframe =document.getElementById("ctu-view");
+  var body = document.getElementById("full-index");
+  body.style.filter="none" ;
+  iframe.style.display="none";
+  iframe.style.filter="none";
+  var icon = document.getElementById("iclose");
+  icon.style.display="none";
+  }
 
  
 

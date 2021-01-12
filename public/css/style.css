@@ -1,34 +1,203 @@
 /*index.pug*/
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  }
+body{
+  background-color: #DDD;
+  position: relative;
+}
 .full-screen{
-  background-image: url('../img/bg.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 900px;
+  margin-top: 0;
+ height: 100vh;
+margin-top: 20px;
   position: relative;
 }
 
-.ic-close{
-  position: absolute;
-  top: 20%;
-  left: 85%;
-  cursor: pointer;
-  display: none;
+.new-subject{
+  padding: 30px 40px;
+  background-color: #FFF;
 }
 
-.group-filter{
-  border: 3px solid #101010;
-  display: inline;
-  padding: 20px 40px;
+.full-table{
+  background-color: #FFF;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.form-create{
+  border: 1px solid #444444;
+  background-color: white ;
+  width: 40%;
   border-radius: 20px;
-  background-color: rgba(5,5,5,0.6);
-}
-
-.ctu-result{
+  padding: 50px 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-40%);
+  transform: translate(-50%,-60%);
+  display: none;
+  z-index: 4;
+}
+
+.hide{
+  display: none;
+}
+
+#status{
+  font-size: 12px;;
+}
+
+
+#viewNote{
+  cursor: pointer;
+  color: red;
+}
+#closeForm{
+  color: rgb(109, 8, 8);
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+#viewNotes{
+  position: absolute;
+top: 0%;
+/* transform: translate(-50%,50%); */
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  display: none;
+}
+
+
+/*NOTE*/
+.name{
+  font-size: 20px;
+  margin: 20px;
+  text-align: center;
+}
+.note{
+  width: 95%;
+  margin: 20px auto;
+  background-color: #444444;
+  /* border: 1px solid #444444; */
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+  position: relative;
+
+}
+.note h5{
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.note p{
+font-size: 13px;
+height: 70%;
+
+}
+.note a{
+  font-size: 13px;
+ padding-bottom: 5px;
+ height: 10%;
+}
+.note span{
+  display: block;
+position: absolute;
+bottom: 5px;
+font-size: 12px;
+color: rgb(241, 68, 68);
+}
+
+
+.note i{
+position: absolute;
+top: 4px;
+left: 8px;
+color: rgb(110, 138, 9);
+cursor: pointer;
+}
+
+
+#addNote{
+  position: fixed;
+  border: 1px solid #444444;
+  width: 40%;
+  top: 20%;
+  left: 30%;
+  border-radius: 20px;
+  background-image: url('../img/bg2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px 0px;
+display:none;
+z-index: 4;
+}
+#addNote textarea{
+  height: 250px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#addForm{
+  width: 80%;
+}
+/*----------*/
+
+
+
+
+/*LOGIN*/
+
+#login{
+	width: 100vw;
+	height: 100vh;
+	/* background-color: #282828; */
+	background-image: url('../img/bg.jpg');
+	background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+	position: absolute;
+	z-index: 2;
+	opacity: 0.5;
+	filter: brightness(60%);
+  }
+  
+  .loginForm{
+	position: fixed;
+	top: 45%;
+	left: 50%;
+	width: 40%;
+	transform: translate(-50%,-50%);
+	margin: 0 auto;
+	background-color: white;
+	padding: 50px 0px;
+	border-radius: 10px;
+	z-index: 3;
+	border: 1px  solid #333333;
+  }
+  /*-----------------------------------*/
+
+.group{
+padding: 10px 0px;
+}
+
+.term{
+  padding: 20px 0 10px 0;
+}
+.year{
+  padding: 15px 0 50px 0;
+}
+
+#black-bg{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #191919;
+  opacity: 0.2;
+  z-index: 3;
   display: none;
 }
 
@@ -38,11 +207,8 @@ padding-top: 30px;
 }
 
 .table-index{
-  background-color: rgba(0,0,0,0.9);
-  box-shadow: 40px 25px 50px #191919;
-  border-radius: 20px;
-  filter: brightness(80%);
 }
+
 
 .notification{
   position: relative;
@@ -152,62 +318,6 @@ display:block !important;
 }
 
 
-
-/*-----bfgame.pug------*/
-
-.canvas{
-	width: 300px;
-	height: 300px;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-40%,60%);
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-image: url('https://vignette.wikia.nocookie.net/millionaire/images/7/7e/Wwtbam_vietnam_logo-0.jpg/revision/latest?cb=20180426123938');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.play{
-}
-
-#main{
-	border: 3px solid black;
-	padding: 30px;
-	width: 500px;
-	height: 400px;
-  margin: 100px auto;
-}
-
-.list{
- /*display: flex;
- align-items: center;
-    justify-content: center;*/
-    list-style: none;
-    margin-top: 20%;
-}
-.list li{
-  border: 1px solid green;
-  padding: 3px 0px;
-  margin-bottom:2px;
-  cursor: pointer;
-  display: block;
-  text-align: center;
-}
-/*.result{
-margin-left: 3px;
-}*/
-
-#game{
-  position: relative;
-}
-.question{
-  text-align: center;
-}
-
 /*---------TKB------------*/
 .main-tkb{
   background-color: #282828;
@@ -222,13 +332,7 @@ margin-top: 50px;
 
 /*------------create.pug--------------*/
 
-.form-create{
-  border: 1px solid #444444;
-  background-color: rgba(28,28,28,0.6);
-  width: 60%;
-  border-radius: 20px;
-  padding: 50px 0;
-}
+
 
 .full-create{
   background-image: url("../img/bg1.jpg");

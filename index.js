@@ -6,9 +6,8 @@ var useRouter=require('./route/index.router');
 var loginRouter=require('./route/login.router');
 var tkbRouter = require('./route/tkb.route');
 var pjRouter =require('./route/project.route');
-var engRouter=require('./route/english.route');
-var gRouter=require('./route/game.route');
 var authMiddleware = require("./middleware/auth.middleware");
+var apiRouter = require('./route/api.route');
 
 app.use(cookieParser("csadsa"));
 app.use(express.json()) // for parsing application/json
@@ -16,20 +15,15 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 app.set('view engine', 'pug');
 
+app.use(express.static('public'));
+
 app.use('/auth',loginRouter);
 
 app.use('/',authMiddleware,useRouter);
-
-app.use('/',tkbRouter);
-
-app.use('/project',pjRouter);
-
-app.use('/',engRouter);
-
-app.use('/',gRouter);
+ 
+app.use('/api',authMiddleware,apiRouter);
 
 
-app.use(express.static('public'));
 
 app.listen(3000,()=>console.log("sever loading on port 3000"));
 
